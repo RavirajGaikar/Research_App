@@ -39,7 +39,7 @@ def generate_pdf(report_text: str) -> bytes:
     
     pdf.multi_cell(0, 10, content)
     pdf_output = pdf.output(dest="S")
-    return pdf_output.encode("latin1", errors="replace") if isinstance(pdf_output, str) else pdf_output
+    return pdf_output.encode("latin1", errors="replace") if isinstance(pdf_output, str) else bytes(pdf_output)
 
 #Initialize Google Generative AI model.
 def initialize_llm(api_key: str):
