@@ -1,6 +1,5 @@
 streamlit
-fpdf
-unicodedata
+fpdf2
 langchain
 langchain_google_genai
 json
