@@ -1,0 +1,6 @@
+streamlit
+fpdf
+unicodedata
+langchain
+langchain_google_genai
+json
